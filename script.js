@@ -1,8 +1,8 @@
 const dialogRef = document.getElementById("imageDialog");
 
-function openDialog(startIndex = 0) {
-    currentIndex = startIndex;
-    current = startIndex + 1;
+function openDialog(index) {
+    currentIndex = index;
+    current = index + 1;
     updateImage();
     updateCounter();
     dialogRef.showModal();
