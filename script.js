@@ -61,3 +61,17 @@ function showPreviousImage() {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     updateImage();
 }
+
+function handleKey(event) {
+    if (!dialogRef.open) return;
+
+    if (event.key === 'ArrowRight') {
+        showNextImage();
+        plusSlides();
+    } else if (event.key === 'ArrowLeft') {
+        showPreviousImage();
+        minusSlides();
+    } else if (event.key === 'Escape') {
+        closeDialog();
+    }
+}
