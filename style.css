@@ -9,6 +9,7 @@ body {
 
 p {
     margin: 0;
+    font-size: 20px;
 }
 
 h1 {
@@ -40,7 +41,7 @@ h2 {
     margin-left: 16px;
 }
 
-#logo {
+#headerLogo {
     height: 72px;
 }
 
@@ -61,6 +62,7 @@ main {
     flex-wrap: wrap;
     flex: 1;
     gap: 12px;
+    margin-bottom: 16px;
 }
 
 #mainPageImages {
@@ -91,11 +93,16 @@ main {
 }
 
 /* Footer */
-#footerInfo {
+#footerBox {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
+}
+
+#footerLogo {
+    height: 72px;
+    margin-top: 8px;
 }
 
 #copyright {
@@ -198,4 +205,11 @@ a:hover {
 
 .d_none {
     display: none;
+}
+
+@media (max-width:450px) {
+    
+    #headerLogo{
+        height: 54px;
+    }
 }
