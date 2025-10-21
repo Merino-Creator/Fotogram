@@ -11,6 +11,19 @@ p {
     margin: 0;
 }
 
+h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 48px;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+/* Header */
+
 #mainPageHeader {
     position: relative;
     height: 80px;
@@ -27,24 +40,18 @@ p {
     margin-left: 16px;
 }
 
+#logo {
+    height: 72px;
+}
+
+/* Main */
 main {
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-image: url(imgs/rain_bg.jpg);
+    background-image: url(/imgs/mainPics/rain_bg.jpg);
     background-position: center;
     background-size: cover;
-}
-
-h1 {
-    text-align: center;
-    font-size: 48px;
-    margin-top: 48px;
-    margin-bottom: 0;
-}
-
-h2 {
-    margin: 0;
 }
 
 .imageContainer {
@@ -83,6 +90,7 @@ h2 {
     box-shadow: 0 -5px 6px rgba(231, 136, 27, 0.5);
 }
 
+/* Footer */
 #footerInfo {
     display: flex;
     justify-content: center;
@@ -96,6 +104,7 @@ h2 {
     align-items: center;
 }
 
+/* Dialog */
 #imageDialog {
     border: 2px solid rgb(231, 136, 27);
     background-color: black;
