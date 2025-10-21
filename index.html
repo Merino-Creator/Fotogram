@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogram</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header id="mainPageHeader">
+        <nav>
+            <div id="headerInfo">
+                <img id="logo" src="" alt="logo">
+                <h2>Fotogram</h2>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Your personal photo album</h1>
+        <div class="imageContainer">
+            <img onclick="openDialog()" id="mainPageImages" src="/imgs/japan1.jpg" alt="pic1">
+            <img onclick="openDialog()" id="mainPageImages" src="/imgs/japan2.jpg" alt="pic2">
+            <img onclick="openDialog()" id="mainPageImages" src="/imgs/japan3.jpg" alt="pic3">
+            <img onclick="openDialog()" id="mainPageImages" src="/imgs/japan4.jpg" alt="pic4">
+            <img onclick="openDialog()" id="mainPageImages" src="/imgs/japan5.jpg" alt="pic5">
+            <img onclick="openDialog()" id="mainPageImages" src="/imgs/japan6.jpg" alt="pic6">
+            <img onclick="openDialog()" id="mainPageImages" src="/imgs/japan7.jpg" alt="pic7">
+            <img onclick="openDialog()" id="mainPageImages" src="/imgs/japan8.jpg" alt="pic8">
+            <img onclick="openDialog()" id="mainPageImages" src="/imgs/japan9.jpg" alt="pic9">
+            <img onclick="openDialog()" id="mainPageImages" src="/imgs/japan10.jpg" alt="pic10">
+            <img onclick="openDialog()" id="mainPageImages" src="/imgs/japan11.jpg" alt="pic11">
+            <img onclick="openDialog()" id="mainPageImages" src="/imgs/japan12.jpg" alt="pic12">
+        </div>
+
+        <dialog id="imageDialog">
+            <header id="dialogHeader">
+                <h2>JapanImage01</h2>
+                <button onclick="closeDialog()" id="dialogCloseButton" class="close-button" aria-label="Close">&times;</button>
+            </header>
+
+            <section>
+                <img id="dialogImages" src="imgs/japan1.jpg" alt="pic1">
+            </section>
+
+            <footer id="dialogFooter">
+                <a onclick="minusSlides(), showPreviousImage()" href="#" class="previous">&#8249;</a>
+                <div id="imageCounter" class="numbertext">1/12</div>
+                <a onclick="plusSlides(), showNextImage()" href="#" class="next">&#8250;</a>
+            </footer>
+        </dialog>
+    </main>
+
+    <footer id="mainPageFooter">
+        <div id="footerInfo">
+            <img src="" alt="logo2">
+            <p>Developer Academy</p>
+        </div>
+        <div id="copyright">
+            <p>copyright</p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: midnightblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin: 0;
+}
+
+#mainPageHeader {
+    position: relative;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 5px 6px rgba(231, 136, 27, 0.5);
+}
+
+#headerInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    height: 80px;
+    margin-left: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-image: url(imgs/rain_bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 48px;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 12px;
+}
+
+#mainPageImages {
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+    border: 2px solid rgb(231, 136, 27);
+}
+
+#mainPageImages:hover {
+    cursor: pointer;
+}
+
+#mainPageImages:hover {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#mainPageFooter {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    bottom: 0;
+    box-shadow: 0 -5px 6px rgba(231, 136, 27, 0.5);
+}
+
+#footerInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imageDialog {
+    border: 2px solid rgb(231, 136, 27);
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    width: 640px;
+    height: 720px;
+    justify-items: center;
+    padding: 0;
+    background-image: url(imgs/rain_bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#imageDialog::backdrop {
+    background-color: rgb(128, 128, 128, 0.275);
+}
+
+#dialogHeader {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dialogImages {
+    width: 480px;
+    height: 480px;
+    margin-top: 24px;
+    border: 1px solid rgb(231, 136, 27);
+}
+
+#dialogFooter {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 8px;
+}
+
+.close-button {
+    font-size: 60px;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.2s, color 0.2s;
+    padding: 0;
+    outline: none;
+}
+
+.close-button:hover {
+    background-color: rgb(255, 163, 58, 0.5);
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 8px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: rgba(255, 163, 58, 0.5);
+}
+
+.previous {
+    background-color: transparent;
+    color: white;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: rgb(231, 136, 27, 0.5);
+}
+
+.next {
+    background-color: transparent;
+    color: white;
+    margin-left: 8px;
+    border-radius: 50%;
+    background-color: rgb(231, 136, 27, 0.5);
+}
+
+.d_none {
+    display: none;
+}
