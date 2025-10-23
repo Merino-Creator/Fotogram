@@ -38,9 +38,9 @@
             <img onclick="openDialog(11)" id="mainPageImages" src="/imgs/mainPics/japan12.jpg" alt="pic12">
         </div>
 
-        <dialog id="imageDialog" onkeydown="handleKey(event)">
+        <dialog id="imageDialog" onclick="closeOnOutsideClick(event)" onkeydown="handleKey(event)">
             <header id="dialogHeader">
-                <h2>JapanImage01</h2>
+                <h2>Closeup</h2>
                 <button onclick="closeDialog()" id="dialogCloseButton" class="close-button" aria-label="Close">&times;</button>
             </header>
 

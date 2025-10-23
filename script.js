@@ -14,6 +14,21 @@ function closeDialog() {
     current = 1;
 }
 
+function closeOnOutsideClick(event) {
+  const dialog = document.getElementById("imageDialog");
+  const rect = dialog.getBoundingClientRect();
+
+  const clickedInside =
+    event.clientX >= rect.left &&
+    event.clientX <= rect.right &&
+    event.clientY >= rect.top &&
+    event.clientY <= rect.bottom;
+
+  if (!clickedInside) {
+    dialog.close();
+  }
+}
+
 let current = 1;
 const max = 12;
 
