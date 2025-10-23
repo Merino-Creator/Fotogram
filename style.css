@@ -25,14 +25,14 @@ h2 {
 
 /* Header */
 
-#mainPageHeader {
+.mainPageHeader {
     position: relative;
     height: 80px;
     background-color: rgb(0, 0, 0);
     box-shadow: 0 5px 6px rgba(231, 136, 27, 0.5);
 }
 
-#headerInfo {
+.headerInfo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -41,7 +41,7 @@ h2 {
     margin-left: 16px;
 }
 
-#headerLogo {
+.headerLogo {
     height: 72px;
 }
 
@@ -80,7 +80,8 @@ main {
     border: 2px solid rgb(255, 255, 255);
 }
 
-#mainPageFooter {
+/* Footer */
+.mainPageFooter {
     height: 80px;
     width: 100%;
     background-color: rgb(0, 0, 0);
@@ -92,23 +93,16 @@ main {
     box-shadow: 0 -5px 6px rgba(231, 136, 27, 0.5);
 }
 
-/* Footer */
-#footerBox {
+.footerBox {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
 }
 
-#footerLogo {
+.footerLogo {
     height: 72px;
     margin-top: 8px;
-}
-
-#copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Dialog */
@@ -130,7 +124,7 @@ main {
     background-color: rgb(128, 128, 128, 0.275);
 }
 
-#dialogHeader {
+.dialogHeader {
     height: 80px;
     width: 100%;
     display: flex;
@@ -209,7 +203,7 @@ a:hover {
 
 @media (max-width:450px) {
     
-    #headerLogo{
+    .headerLogo{
         height: 54px;
     }
 }
