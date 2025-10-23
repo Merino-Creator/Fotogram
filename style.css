@@ -3,8 +3,12 @@ body {
     flex-direction: column;
     margin: 0;
     height: 100vh;
-    background-color: midnightblue;
     color: white;
+}
+
+:root {
+    --border-color: rgb(231, 136, 27); 
+    --shadow-color: rgba(231, 136, 27, 0.5);
 }
 
 p {
@@ -29,7 +33,7 @@ h2 {
     position: relative;
     height: 80px;
     background-color: rgb(0, 0, 0);
-    box-shadow: 0 5px 6px rgba(231, 136, 27, 0.5);
+    box-shadow: 0 5px 6px var(--shadow-color);
 }
 
 .headerInfo {
@@ -69,7 +73,7 @@ main {
     width: 160px;
     height: 160px;
     border-radius: 12px;
-    border: 2px solid rgb(231, 136, 27);
+    border: 2px solid var(--border-color);
 }
 
 #mainPageImages:hover {
@@ -90,7 +94,7 @@ main {
     gap: 8px;
     bottom: 0;
     background-color: rgb(0, 0, 0);
-    box-shadow: 0 -5px 6px rgba(231, 136, 27, 0.5);
+    box-shadow: 0 -5px 6px var(--shadow-color);
 }
 
 .footerBox {
@@ -112,7 +116,7 @@ main {
     width: 640px;
     height: 720px;
     padding: 0;
-    border: 2px solid rgb(231, 136, 27);
+    border: 2px solid var(--border-color);
     background-color: black;
     color: white;
     background-image: url(/imgs/mainPics/rain_bg.jpg);
@@ -136,7 +140,7 @@ main {
     width: 480px;
     height: 480px;
     margin-top: 24px;
-    border: 1px solid rgb(231, 136, 27);
+    border: 1px solid var(--border-color);
 }
 
 #dialogFooter {
@@ -162,7 +166,7 @@ main {
 }
 
 .close-button:hover {
-    background-color: rgb(255, 163, 58, 0.5);
+    background-color: var(--shadow-color);
 }
 
 .close-button {
@@ -178,7 +182,7 @@ a {
 }
 
 a:hover {
-    background-color: rgba(255, 163, 58, 0.5);
+    background-color: var(--border-color);
 }
 
 .previous {
@@ -186,7 +190,7 @@ a:hover {
     border-radius: 50%;
     background-color: transparent;
     color: white;
-    background-color: rgb(231, 136, 27, 0.5);
+    background-color: var(--shadow-color);
 }
 
 .next {
@@ -194,7 +198,7 @@ a:hover {
     border-radius: 50%;
     background-color: transparent;
     color: white;
-    background-color: rgb(231, 136, 27, 0.5);
+    background-color: var(--shadow-color);
 }
 
 .d_none {
