@@ -29,14 +29,14 @@ h2 {
 
 /* Header */
 
-.mainPageHeader {
+.MainPageHeader {
     position: relative;
     height: 80px;
     background-color: rgb(0, 0, 0);
     box-shadow: 0 5px 6px var(--shadow-color);
 }
 
-.headerInfo {
+.HeaderInfo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -45,7 +45,7 @@ h2 {
     margin-left: 16px;
 }
 
-.headerLogo {
+.HeaderLogo {
     height: 72px;
 }
 
@@ -59,7 +59,7 @@ main {
     background-size: cover;
 }
 
-.imageContainer {
+.ImageContainer {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -85,7 +85,7 @@ main {
 }
 
 /* Footer */
-.mainPageFooter {
+.MainPageFooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,14 +97,14 @@ main {
     box-shadow: 0 -5px 6px var(--shadow-color);
 }
 
-.footerBox {
+.FooterBox {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
 }
 
-.footerLogo {
+.FooterLogo {
     height: 72px;
     margin-top: 8px;
 }
@@ -128,7 +128,7 @@ main {
     background-color: rgb(128, 128, 128, 0.275);
 }
 
-.dialogHeader {
+.DialogHeader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +153,7 @@ main {
     bottom: 8px;
 }
 
-.close-button {
+.Close-button {
     font-size: 60px;
     color: #ffffff;
     background: transparent;
@@ -163,16 +163,13 @@ main {
     transition: background-color 0.2s, color 0.2s;
     padding: 0;
     outline: none;
-}
-
-.close-button:hover {
-    background-color: var(--shadow-color);
-}
-
-.close-button {
     position: absolute;
     top: 0;
     right: 8px;
+}
+
+.Close-button:hover {
+    background-color: var(--shadow-color);
 }
 
 a {
@@ -185,7 +182,7 @@ a:hover {
     background-color: var(--border-color);
 }
 
-.previous {
+.Previous {
     margin-right: 8px;
     border-radius: 50%;
     background-color: transparent;
@@ -193,7 +190,7 @@ a:hover {
     background-color: var(--shadow-color);
 }
 
-.next {
+.Next {
     margin-left: 8px;
     border-radius: 50%;
     background-color: transparent;
