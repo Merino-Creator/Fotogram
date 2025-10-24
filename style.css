@@ -3,28 +3,30 @@ body {
     flex-direction: column;
     margin: 0;
     height: 100vh;
-    color: white;
 }
 
 :root {
     --border-color: rgb(231, 136, 27); 
     --shadow-color: rgba(231, 136, 27, 0.5);
-}
-
-p {
-    margin: 0;
-    font-size: 20px;
+    --text-color: white;
 }
 
 h1 {
     text-align: center;
     font-size: 48px;
-    margin-top: 48px;
+    margin-top: 80px;
     margin-bottom: 0;
+    color: var(--text-color);
 }
 
 h2 {
     margin: 0;
+    color: var(--text-color);
+}
+
+h3 {
+    margin: 0;
+    color: var(--text-color);
 }
 
 /* Header */
@@ -62,6 +64,7 @@ main {
     flex: 1;
     gap: 12px;
     margin-bottom: 16px;
+    padding-top: 80px;
 }
 
 .mainPageImages {
