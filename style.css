@@ -51,7 +51,7 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-image: url(/imgs/mainPics/rain_bg.jpg);
+    background-image: url(./imgs/mainPics/rain_bg.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -106,7 +106,7 @@ main {
     border: 2px solid var(--border-color);
     background-color: black;
     color: white;
-    background-image: url(/imgs/mainPics/rain_bg.jpg);
+    background-image: url(./imgs/mainPics/rain_bg.jpg);
     background-position: center;
     background-size: cover;
 }
