@@ -141,7 +141,7 @@ main {
 }
 
 .Close-button {
-    font-size: 60px;
+    font-size: 40px;
     color: #ffffff;
     background: transparent;
     border: none;
@@ -151,7 +151,7 @@ main {
     padding: 0;
     outline: none;
     position: absolute;
-    top: 0;
+    top: 16px;
     right: 8px;
 }
 
@@ -203,6 +203,10 @@ a:hover {
     .DialogHeader {
         height: 60px;
     }
+
+    .Close-button {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -219,11 +223,37 @@ a:hover {
     .DialogHeader {
         height: 40px;
     }
+
+    .Close-button {
+        font-size: 24px;
+        top: 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    #imageDialog {
+        width: 280px;
+        height: 360px;
+    }
+
+    #dialogImages {
+        width: 200px;
+        height: 200px;
+    }
+
+    .DialogHeader {
+        height: 30px;
+    }
+
+    .Close-button {
+        font-size: 16px;
+        top: 4px;
+    }
 }
 
 @media (max-width:450px) {
     
-    .headerLogo{
+    .HeaderLogo{
         height: 54px;
     }
 }
