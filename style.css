@@ -189,6 +189,38 @@ a:hover {
     display: none;
 }
 
+@media (max-width: 700px) {
+    #imageDialog {
+        width: 520px;
+        height: 600px;
+    }
+
+    #dialogImages {
+        width: 400px;
+        height: 400px;
+    }
+
+    .DialogHeader {
+        height: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    #imageDialog {
+        width: 400px;
+        height: 480px;
+    }
+
+    #dialogImages {
+        width: 320px;
+        height: 320px;
+    }
+
+    .DialogHeader {
+        height: 40px;
+    }
+}
+
 @media (max-width:450px) {
     
     .headerLogo{
