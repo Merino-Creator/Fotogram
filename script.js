@@ -54,35 +54,27 @@ function updateCounter() {
 function plusSlides() {
   current = (current % max) + 1;
   updateCounter();
+  currentIndex = (currentIndex + 1) % IMAGES.length;
+  updateImage();
 }
 
 function minusSlides() {
   current = (current - 2 + max) % max + 1;
   updateCounter();
+  currentIndex = (currentIndex - 1 + IMAGES.length) % IMAGES.length;
+  updateImage();
 }
 
 function updateImage() {
   document.getElementById('dialogImages').src = IMAGES[currentIndex];
 }
 
-function showNextImage() {
-  currentIndex = (currentIndex + 1) % IMAGES.length;
-  updateImage();
-}
-
-function showPreviousImage() {
-  currentIndex = (currentIndex - 1 + IMAGES.length) % IMAGES.length;
-  updateImage();
-}
-
 function handleKey(event) {
   if (!dialogRef.open) return;
 
   if (event.key === 'ArrowRight') {
-    showNextImage();
     plusSlides();
   } else if (event.key === 'ArrowLeft') {
-    showPreviousImage();
     minusSlides();
   } else if (event.key === 'Escape') {
     closeDialog();
