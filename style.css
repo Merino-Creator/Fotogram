@@ -34,7 +34,8 @@ h3 {
 /* Contentwrapper */
 
 .ContentWrapper {
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
 }
 
 /* Header */
@@ -47,7 +48,6 @@ h3 {
     height: 80px;
     background-color: rgb(0, 0, 0);
     box-shadow: 0 5px 6px var(--shadow-color);
-    width: 100%;
 }
 
 .HeaderLogo {
