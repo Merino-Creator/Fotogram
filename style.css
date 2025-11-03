@@ -16,6 +16,8 @@ h1 {
     font-size: 48px;
     margin-top: 80px;
     margin-bottom: 0;
+    margin-left: 16px;
+    margin-right: 16px;
     color: var(--text-color);
 }
 
@@ -62,7 +64,6 @@ main {
     align-content: center;
     flex-wrap: wrap;
     flex: 1;
-    gap: 12px;
     margin-bottom: 16px;
     padding-top: 80px;
 }
@@ -72,6 +73,7 @@ main {
     height: 160px;
     border-radius: 12px;
     border: 2px solid var(--border-color);
+    margin: 16px;
 }
 
 .mainPageImages:hover {
@@ -249,11 +251,15 @@ a:hover {
         font-size: 16px;
         top: 4px;
     }
-}
 
-@media (max-width:450px) {
-    
     .HeaderLogo{
         height: 54px;
+    }
+}
+
+@media (max-width:400px) {
+    
+    .HeaderLogo{
+        height: 40px;
     }
 }
