@@ -15,7 +15,7 @@
 
     <header class="MainPageHeader">
         <div class="ContentWrapperHeader">
-            <img class="HeaderLogo" src="./imgs/logo/Fotogram_Logo.svg" alt="Fotogram Logo">
+            <img class="HeaderLogo" src="./imgs/logo/Fotogram_Logo.svg" alt="Fotogram Logo and Headline">
         </div>
     </header>
 
@@ -51,13 +51,13 @@
 
             <dialog id="imageDialog" onclick="closeOnOutsideClick(event)" onkeydown="handleKey(event)">
                 <header class="DialogHeader">
-                    <h2>Closeup</h2>
-                    <button tabindex="0" onclick="closeDialog()" id="dialogCloseButton" class="Close-button"
+                    <h2 style="margin: 0 auto; width: fit-content; background-color: black;">Closeup</h2>
+                    <button tabindex="0" onclick="closeDialog()" id="dialogCloseButton" class="CloseButton"
                         aria-label="Close">X</button>
                 </header>
 
                 <section>
-                    <img id="dialogImages" src="./imgs/mainPics/japan1.jpg" alt="Closeup Image">
+                    <img id="dialogImages">
                 </section>
 
                 <footer id="dialogFooter">
@@ -70,7 +70,7 @@
     </main>
 
     <footer class="MainPageFooter">
-        <img class="FooterLogo" src="./imgs/favicon/favicon.png" alt="logo2">
+        <img class="FooterLogo" src="./imgs/favicon/favicon.png" alt="Fotogram Logo">
         <h2>Fotogram</h2>
     </footer>
 

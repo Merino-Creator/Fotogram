@@ -23,7 +23,6 @@ h1 {
 }
 
 h2 {
-    margin: 0;
     color: var(--text-color);
 }
 
@@ -162,22 +161,17 @@ main {
     bottom: 8px;
 }
 
-.Close-button {
-    font-size: 40px;
+.CloseButton {
+    font-size: 32px;
     color: #ffffff;
     background: transparent;
     border: none;
     cursor: pointer;
     border-radius: 50%;
-    transition: background-color 0.2s, color 0.2s;
-    padding: 0;
-    outline: none;
-    position: absolute;
-    top: 16px;
-    right: 8px;
+    margin-right: 8px;
 }
 
-.Close-button:hover {
+.CloseButton:hover {
     background-color: var(--shadow-color);
 }
 
