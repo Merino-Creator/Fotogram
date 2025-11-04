@@ -71,6 +71,7 @@ function minusSlides() {
 
 function handleKey(event) {
   if (!dialogRef.open) return;
+  event.preventDefault();
 
   if (event.key === 'ArrowRight') {
     plusSlides();
