@@ -52,7 +52,7 @@ function updateCounter() {
 }
 
 function updateImage() {
-  document.getElementById('dialogImages').src = IMAGES[currentIndex];
+  document.getElementById('dialogImages').src = IMAGES [currentIndex];
 }
 
 function plusSlides() {
@@ -78,5 +78,11 @@ function handleKey(event) {
     minusSlides();
   } else if (event.key === 'Escape') {
     closeDialog();
+  }
+}
+
+function enterToOpen(event, index) {
+  if (event.key === 'Enter') {
+    openDialog(index);
   }
 }
