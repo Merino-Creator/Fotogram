@@ -51,6 +51,10 @@ function updateCounter() {
   document.getElementById('imageCounter').innerText = `${current}/${max}`;
 }
 
+function updateImage() {
+  document.getElementById('dialogImages').src = IMAGES[currentIndex];
+}
+
 function plusSlides() {
   current = (current % max) + 1;
   updateCounter();
@@ -63,10 +67,6 @@ function minusSlides() {
   updateCounter();
   currentIndex = (currentIndex - 1 + IMAGES.length) % IMAGES.length;
   updateImage();
-}
-
-function updateImage() {
-  document.getElementById('dialogImages').src = IMAGES[currentIndex];
 }
 
 function handleKey(event) {
