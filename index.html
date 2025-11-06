@@ -13,7 +13,7 @@
 
 <body>
 
-    <header class="MainPageHeader">
+    <header aria-label="Header of main page" class="MainPageHeader">
         <div class="ContentWrapperHeader">
             <img class="HeaderLogo" src="./imgs/logo/Fotogram_Logo.svg" alt="Fotogram Logo and Headline">
         </div>
@@ -49,7 +49,7 @@
                     alt="Osaka Caste in the early morning">
             </div>
 
-            <dialog id="imageDialog" onclick="closeOnOutsideClick(event)" onkeydown="handleKey(event)">
+            <dialog arial-label="dialog window" id="imageDialog" onclick="closeOnOutsideClick(event)" onkeydown="handleKey(event)">
                 <header class="DialogHeader">
                     <h2 style="margin: 0 auto; width: fit-content; background-color: black;">Closeup</h2>
                     <button tabindex="0" onclick="closeDialog()" id="dialogCloseButton" class="CloseButton"
@@ -61,9 +61,9 @@
                 </section>
 
                 <footer id="dialogFooter">
-                    <a tabindex="0" onclick="minusSlides()" href="#" class="Previous">&#8249;</a>
+                    <a aria-label="previous button" tabindex="0" onclick="minusSlides()" href="#" class="Previous">&#8249;</a>
                     <div id="imageCounter" class="Numbertext">1/12</div>
-                    <a tabindex="0" onclick="plusSlides()" href="#" class="Next">&#8250;</a>
+                    <a aria-label="next button" tabindex="0" onclick="plusSlides()" href="#" class="Next">&#8250;</a>
                 </footer>
             </dialog>
         </div>
