@@ -175,30 +175,33 @@ main {
     background-color: var(--shadow-color);
 }
 
-a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
+.Previous {
+    height: 32px;
+    width: 32px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    background-color: var(--shadow-color);
+    cursor: pointer;
 }
 
-a:hover {
+.Previous:hover {
     background-color: var(--border-color);
 }
 
-.Previous {
-    margin-right: 8px;
+.Next {
+    height: 32px;
+    width: 32px;
+    border: none;
     border-radius: 50%;
-    background-color: transparent;
     color: white;
     background-color: var(--shadow-color);
+    cursor: pointer;
 }
 
-.Next {
-    margin-left: 8px;
-    border-radius: 50%;
-    background-color: transparent;
-    color: white;
-    background-color: var(--shadow-color);
+.Next:hover {
+    background-color: var(--border-color);
+
 }
 
 .d_none {
