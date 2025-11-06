@@ -176,13 +176,13 @@ main {
 }
 
 .Previous {
-    height: 32px;
-    width: 32px;
-    border: none;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
+    border: none;
+    cursor: pointer;
     color: white;
     background-color: var(--shadow-color);
-    cursor: pointer;
 }
 
 .Previous:hover {
@@ -190,13 +190,13 @@ main {
 }
 
 .Next {
-    height: 32px;
-    width: 32px;
-    border: none;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
+    border: none;
+    cursor: pointer;
     color: white;
     background-color: var(--shadow-color);
-    cursor: pointer;
 }
 
 .Next:hover {
@@ -250,6 +250,11 @@ main {
 }
 
 @media (max-width: 500px) {
+
+    .HeaderLogo{
+        height: 54px;
+    }
+
     #imageDialog {
         width: 280px;
         height: 360px;
@@ -269,9 +274,16 @@ main {
         top: 4px;
     }
 
-    .HeaderLogo{
-        height: 54px;
+    .Previous {
+        height: 32px;
+        width: 32px;
     }
+
+    .Next {
+        height: 32px;
+        width: 32px;
+    }
+
 }
 
 @media (max-width:400px) {
