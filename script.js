@@ -71,13 +71,15 @@ function minusSlides() {
 
 function handleKey(event) {
   if (!dialogRef.open) return;
-  event.preventDefault();
 
   if (event.key === 'ArrowRight') {
+    event.preventDefault();
     plusSlides();
   } else if (event.key === 'ArrowLeft') {
+    event.preventDefault();
     minusSlides();
   } else if (event.key === 'Escape') {
+    event.preventDefault();
     closeDialog();
   }
 }
