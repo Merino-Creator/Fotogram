@@ -90,6 +90,7 @@ main {
     border-radius: 12px;
     border: 2px solid var(--border-color);
     margin: 16px;
+    object-fit: cover;
 }
 
 .mainPageImages:hover {
